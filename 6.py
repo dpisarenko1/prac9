@@ -11,4 +11,5 @@ try:
 except ValueError:
     result = 'ERROR'
 
-open('output6.txt', 'w', encoding = 'utf-8').write(result)
+with open('output6.txt', 'w', encoding = 'utf-8') as file_out:
+    file_out.write(result)
